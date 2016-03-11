@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<body>
+
+<h1>Data por extenso</h1>
+<input id='data' class="form-control" type="text" name="data" size="10"/>
+	<button onclick="Verificar()">Verificar</button>
+	<p id="desafio2"></p>
+
+<script>
+function Verificar() {
+    var x = (document.getElementById("data").value);
+    var elem = x.split("/");	
+		if ( elem[1] == 01 ){
+    		document.getElementById("desafio2").innerHTML = elem[0] + " de janeiro de " + elem[2] ;
+		}
+}
+</script>
+
+</body>
+</html>
+
