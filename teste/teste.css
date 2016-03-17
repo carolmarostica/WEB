@@ -1,41 +1,42 @@
-
 .caixaF{
-border-radius: 30px;
 width:90px;
 height:90px;
-margin:180px 0px 0px 10px ;
+margin:50px 0px 0px 50px;
 }
 .caixaC{
-border-radius: 30px;
 width:90px;
 height:90px;
-float: right;
-margin:180px 0px 0px 0px ;
+margin:50px 0px 0px 50px;
 }
 
 #fa{
 background:green;
 border-radius: 30px;
-width:20px;
+width:80px;
 height:30px;
 }
-
 #ff{
 background: red;
 border-radius: 30px;
-width:20px;
+width:80px;
 height:30px;
 }
 #ca{
 background:green;
 border-radius: 30px;
-width:20px;
+width:80px;
 height:30px;
 }
-
 #cf{
 background: red;
 border-radius: 30px;
-width:20px;
+width:80px;
 height:30px;
+}
+
+textoc{
+width:200px;
+}
+textof{
+width: 200px;
 }
