@@ -47,6 +47,11 @@ $( function() {
 	$(".EmailErrado").hide();
 	$("#iddata").mask("99/99/9999");
 })
+function Limpar(){
+	document.getElementById("idnome").value = " ";	//o campo recebe vazio//
+	document.getElementById("iddata").value = " ";	//o campo recebe vazio//
+	document.getElementById("idemail").value = " "; //o campo recebe vazio//
+}
 function Validar(){
 	var n = document.getElementById("idnome").value;	
 	var d = document.getElementById("iddata").value;
@@ -159,7 +164,7 @@ function Validar(){
 </div>
 
 <! botões >
-<input type=reset class="limpar" value="Limpar"></strong>					
+<input type=reset class="limpar" value="Limpar" onclick="Limpar()"></strong>					
 <input type="button" class="enviar" name="Enviar" value="Enviar" onclick="Validar()"/>
 </body>
 </html>
