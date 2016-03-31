@@ -47,11 +47,13 @@ $( function() {
 	$(".EmailErrado").hide();
 	$("#iddata").mask("99/99/9999");
 })
+//função chamada pelo botão limpar//
 function Limpar(){
 	document.getElementById("idnome").value = " ";	//o campo recebe vazio//
 	document.getElementById("iddata").value = " ";	//o campo recebe vazio//
 	document.getElementById("idemail").value = " "; //o campo recebe vazio//
 }
+//função chamada pelo botão enviar//
 function Validar(){
 	var n = document.getElementById("idnome").value;	
 	var d = document.getElementById("iddata").value;
