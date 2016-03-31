@@ -41,11 +41,11 @@
 	</style>
 
 <script type="text/javascript" >
-$ ( function() {
-$(".NomeErrado").hide();
-$(".DataErrado").hide();
-$(".EmailErrado").hide();
-$("#iddata").mask("99/99/9999");
+$( function() {
+	$(".NomeErrado").hide();
+	$(".DataErrado").hide();
+	$(".EmailErrado").hide();
+	$("#iddata").mask("99/99/9999");
 })
 function Validar(){
 	var n = document.getElementById("idnome").value;	
@@ -57,8 +57,8 @@ function Validar(){
 	var no = false;    		 
 	var em = false;	
 	var TamanhoNome=n.length;
-
-	//Validação do nome//
+	
+//Validação do nome//
 	if (TamanhoNome>= 10){	
 		no = true;
 	}else{
@@ -66,60 +66,62 @@ function Validar(){
 		$(".NomeErrado").show();
 		document.getElementById("idnome").value = " ";	
 	}
-	//Validação do email//
-		var TamanhoEmail = e.length;		
-		for (var i=0; i<=TamanhoEmail; i++) {
-			if (e[i] == '@' ){	
-				em = true;
-			}
+
+//Validação do email//
+	var TamanhoEmail = e.length;		
+	for (var i=0; i<=TamanhoEmail; i++) {
+		if (e[i] == '@' ){	
+			em = true;
 		}
-		if (em==false){
-			$(".EmailErrado").show();
-			document.getElementById("idemail").value = " ";	
-		}
-		//Validação da data//
+	}
+	if (em==false){
+		$(".EmailErrado").show();
+		document.getElementById("idemail").value = " ";	
+	}
+
+//Validação da data//
 	if ((data[2] <= 2016) && (data[2]>0000)){				
-			if ((data[1] == 04) || (data[1] == 06)  || (data[1] == 09) || (data[1] == 11)){
-				if((data[0] <= 30) && (data[0] > 00)){
-					dt= true;	
-				}
-			} else if ((data[1] == 01) || (data[1] == 03)  || (data[1] == 05) || (data[1] == 07) || (data[1] == 08)|| (data[1] == 10)|| (data[1] == 12) ){
-				if((data[0] <= 31) && (data[0] > 00)){
-					dt= true;	
-				}
-			}else if (data[1] == 02){
-				if (data[2] % 4 ==0){
-					if (data[2] % 100 !=0){
-						if (data[0] <= 29){
-							dt = true;	
-						}
-					}else{
-						if (data[2] % 400 ==0){
-							if ((data[0] <= 29) && (data[0] > 00)){
-								dt = true;							
-							}	
-						}
+		if ((data[1] == 04) || (data[1] == 06)  || (data[1] == 09) || (data[1] == 11)){
+			if((data[0] <= 30) && (data[0] > 00)){
+				dt= true;	
+			}
+		} else if ((data[1] == 01) || (data[1] == 03)  || (data[1] == 05) || (data[1] == 07) || (data[1] == 08)|| (data[1] == 10)|| (data[1] == 12) ){
+			if((data[0] <= 31) && (data[0] > 00)){
+				dt= true;	
+			}
+		}else if (data[1] == 02){
+			if (data[2] % 4 ==0){
+				if (data[2] % 100 !=0){
+					if (data[0] <= 29){
+						dt = true;	
 					}
 				}else{
-					if ((data[0] <= 28) && (data[0] > 00)){
-							dt = true;						
+					if (data[2] % 400 ==0){
+						if ((data[0] <= 29) && (data[0] > 00)){
+							dt = true;							
+						}	
 					}
 				}
+			}else{
+				if ((data[0] <= 28) && (data[0] > 00)){
+					dt = true;						
+				}
 			}
-		}	
-		if (dt==false){
-			$(".DataErrado").show();
-			document.getElementById("iddata").value = " ";	
 		}
+	}	
+	if (dt==false){
+		$(".DataErrado").show();
+		document.getElementById("iddata").value = " ";	
+	}
 		
-	//Mensagem de ok//
+//Mensagem de ok//
 	if((em == true) && (no == true) && (dt == true)){
 		$(".NomeErrado").hide();
 		$(".DataErrado").hide();
 		$(".EmailErrado").hide();	
-	document.getElementById("idnome").value = " ";	
-	document.getElementById("iddata").value = " ";
-	document.getElementById("idemail").value = " ";
+		document.getElementById("idnome").value = " ";	//o campo recebe vazio//
+		document.getElementById("iddata").value = " ";	//o campo recebe vazio//
+		document.getElementById("idemail").value = " "; //o campo recebe vazio//
 		alert("Dados gravados com sucesso!");
 	}
 }
@@ -127,7 +129,9 @@ function Validar(){
 </head>
 <body>
 <h1>Formulário de Inscrição</h1>
-<hr>
+<hr> <! passa um traço >
+
+<! recebe o nome >
 <div class="nome">
 	<label for="idn"><b>Nome:</b></label>
 	<input id="idnome" class="form-control" type="text" name="nome" size="15"/></br></br>
@@ -136,22 +140,25 @@ function Validar(){
 		</div>
 </div>	
 
+<! recebe a data >
 <div class="data">			
-<label for="idd"><b>Data de Nascimento:</b></label>
-<input id="iddata" class="form-control" type="text" name="nome" size="15"/></br></br>
-	
-	<div class="DataErrado">
-		<h6>Data Inválida</h6>	
-	</div>
+	<label for="idd"><b>Data de Nascimento:</b></label>
+	<input id="iddata" class="form-control" type="text" name="nome" size="15"/></br></br>
+		<div class="DataErrado">
+			<h6>Data Inválida</h6>	
+		</div>
 </div>
 
+<! recebe o email >
 <div class="email">
-<label for="ide"><b>Email:</b></label>
-<input id="idemail" class="form-control" type="text" name="nome" size="15"/></br></br>
-	<div class="EmailErrado">
-		<h6>Email inválido</h6>	
-	</div>
+	<label for="ide"><b>Email:</b></label>
+	<input id="idemail" class="form-control" type="text" name="nome" size="15"/></br></br>
+		<div class="EmailErrado">
+			<h6>Email inválido</h6>	
+		</div>
 </div>
+
+<! botões >
 <input type=reset class="limpar" value="Limpar"></strong>					
 <input type="button" class="enviar" name="Enviar" value="Enviar" onclick="Validar()"/>
 </body>
