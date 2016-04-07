@@ -1,0 +1,66 @@
+body{
+background: #FFF;
+margin: 0px;
+font-size: 13px;
+padding:0px;
+}
+.tudo{
+background:#FFF;
+width:900px;
+height: auto;
+margin: 10px auto;
+padding:0px;;
+}
+.topo{
+background: #FFF;
+width:900px;
+height:100px;
+margin:5px;
+}
+.img{
+margin: 5px;
+float:left;
+}
+.menu nav ul{
+background: #ccc;
+box-shadow: 0px 0px 9px;
+padding: 0 50px;
+border-radius:10px;
+display:inline-table;
+list-style:none;
+}
+.menu nav ul li{
+float: left;
+margin: 5px 10px;
+}
+.conteudo{
+float:left;
+width:600px;
+}
+.id{
+float:left;
+width:500px;
+}
+.noticia p{
+text-align: justify;
+width:400px;
+
+}
+.noticia{
+width:500px 800px;
+margin-left:20px;
+
+}
+.formulario{
+border: solid 1px;
+width: 500px;
+padding: 10px 5px;
+}
+.arquivos{
+width: 300px;
+float: right;
+}
+.rodape{
+text-align: center;
+float: botton;
+}
