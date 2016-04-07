@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> Calendário Iterativo </title>
+		<meta  charset="utf-8">
+		<link type="text/css" href="js/jquery-ui.css" rel="stylesheet"/>
+		<script  type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script  type="text/javascript" src="js/jquery-ui.js"></script>
+		<script  type="text/javascript" src="js/datepicker-pt-BR.js"></script>
+<script  type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<form>
+			<label for="data">Data:</label>
+			<input  type="text" id="calendario" />
+		</form>
+		<script>
+			$(function(){
+				$("#calendario").datepicker({
+					showOn: "button",
+					buttonImage: "calendario.jpeg",
+					buttonImageOnly: true
+				});
+			});
+		</script>
+	</body>
+</html>
