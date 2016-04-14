@@ -19,108 +19,108 @@ height: 100px;
 margin: 0;
 }
 .imgTopo{
-float: left;
+ float: left;
  top: 5px;
  left: 10px;
- }
- .imgTopo img{
+}
+.imgTopo img{
  max-width: 100px;
  max-height: 100px;
  width: auto;
  height: auto;
- }
- .menuTopo nav ul{
+}
+.menuTopo nav ul{
  background: #ccc;
-  background: linear-gradient( top , #ccc 0% , #bbbbbb 100%);
-  background: -moz-linear-gradient( top , #ccc 0% , #bbbbbb 100%);
- background:-webkit-linear-gradient( top , #ccc 0% , #bbbbbb 100%);
- box-shadow: 0px 0px 9px rgba (0 , 0 , 0 , 0.15);
+ background: linear-gradient( top, #ccc 0%, #bbbbbb 100%);
+ background:-moz-linear-gradient( top, #ccc 0%, #bbbbbb 100%);
+ background:-webkit-linear-gradient(top, #ccc 0%, #bbbbbb 100%);
+ box-shadow: 0px 0px 9px rgba(0 , 0 , 0 , 0.15);
  padding: 0 100px;
  border-radius: 10px;
  list-style: none;
  display: inline-table;
- }
- .menuTopo nav ul: after{
- content: "";
+}
+.menuTopo nav ul: after{
+ content:" ";
  clear: both;
  display: block;
- }
- .menuTopo nav ul li{
+}
+.menuTopo nav ul li{
  float: left;
- }
- .menuTopo nav ul li: hover{
- background: #4 b545f;
- background: linear-gradient( top , #4 f5964 0% , #5 f6975 40%);
- background: -moz-linear-gradient( top , #4 f5964 0% , #5 f6975 40%);
- background:-webkit-linear-gradient( top , #4 f5964 0% , #5 f6975 40%);
- }
- .menuTopo nav ul li: hover a{
+}
+.menuTopo nav ul li:hover{
+	 background: #4b545f;
+	 background:-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	 background:-moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	 background:-webkit-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+}
+.menuTopo nav ul li: hover a{
  color: #fff;
- }
- .menuTopo nav ul li a{
+}
+.menuTopo nav ul li a{
  display: block;
  padding: 25px 40px;
  color: #757575;
  text-decoration: none;
- }
- .container{
+}
+.container{
  float: left;
  width: 600px;
- }
- .idBlog{
+}
+.idBlog{
  float: left;
  width: 500px;
- }
- .idBlog img{
+}
+.idBlog img{
  max-width: 500px;
  max-height: 200px;
  width: auto;
  height: auto;
- }
- .idBlog p{
+}
+.idBlog p{
  text-align: right;
- }
- .conteudo{
+}
+.conteudo{
  width: 500px;
  margin-left: 20px;
- }
- .comentario{
+}
+.comentario{
  margin-left: 20px;
- }
- .conteudo img{
+}
+.conteudo img{
  max-width: 500px;
  max-height: 500px;
  width: auto;
  height: auto;
- }
+}
 .conteudo p{
- text-align: justify;
- }
- .menuPrincipal{
+text-align: justify;
+}
+.menuPrincipal{
  float: left;
- }
- .menuPrincipal h3{
+}
+.menuPrincipal h3{
  text-align: center;
- }
- .menuPrincipal ul{
+}
+.menuPrincipal ul{
  list-style: none;
- }
- .menuPrincipal ul li a{
+}
+.menuPrincipal ul li a{
  text-decoration: none;
  font-size: 18px;
- }
- .formulario{
+}
+.formulario{
  border: solid 1px;
  width: 500px;
  padding: 1px 10px;
- }
- .formulario #botao{
+}
+.formulario #botao{
  position: relative;
  left: 300px;
- }
- .rodape{
+}
+.rodape{
  float: left;
  width: 500px;
  padding: 10px;
  text-align: center;
- }
+}

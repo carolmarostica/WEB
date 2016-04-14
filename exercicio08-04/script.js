@@ -3,9 +3,27 @@ $(document).ready(function(e){
 	$(".menuPrincipal a").click(function(e){
 		e.preventDefault();
 		var href = $(this).attr('href');
-		$(".conteudo").load(href + ".conteudo");
+		$(".conteudo").load(href + " .conteudo");
+	});
+	
+	$(".sobre").click(function(e){
+		e.preventDefault();
+		var href = $(this).attr('href');
+		$(".conteudo").load(href + " .conteudo");
+		$(".comentario").hide();
+		$(".menuPrincipal").hide();		
+	});
+
+	$(".links").click(function(e){
+		e.preventDefault();
+		var href = $(this).attr('href');
+		$(".conteudo").load(href + " .conteudo");
+		$(".comentario").hide();		
+		$(".menuPrincipal").hide();	
 	});
 });
+
+
 
 function dialogo(){
 	$("#dialog-confirm").dialog({
