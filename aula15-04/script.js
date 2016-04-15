@@ -11,7 +11,7 @@ $(document).ready(function(e){
 		var href = $(this).attr('href');
 		$(".conteudo").load(href + " .conteudo");
 		$(".comentario").hide();
-		$(".menuPrincipal").hide();		
+		$(".menuPrincipal").load(href + " .menuPrincipal");	
 	});
 
 	$(".links").click(function(e){
@@ -19,7 +19,7 @@ $(document).ready(function(e){
 		var href = $(this).attr('href');
 		$(".conteudo").load(href + " .conteudo");
 		$(".comentario").hide();		
-		$(".menuPrincipal").hide();	
+		$(".menuPrincipal").load(href + " .menuPrincipal");
 	});
 
 	$(".inicio").click(function(e){
@@ -77,7 +77,6 @@ function dialogo(){
 						}
 					}
 				if(email1==true && email2==true && nome1==true && nome2==true){
-					alert("Dados enviados com sucesso!");
 				}else{
 					alert("Dados inseridos errado!");
 				}
